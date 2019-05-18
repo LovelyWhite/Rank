@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fx:id="head" blendMode="MULTIPLY" fitHeight="136.0" fitWidth="125.0" layoutX="22.0" layoutY="87.0" opacity="0.51" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/profile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="dragTitle" layoutX="14.0" layoutY="2.0" prefHeight="40.0" prefWidth="188.0" text="全国计算机考试报名系统">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7095238095238096" endY="0.12380952380952386" startX="0.8809523809523808" startY="0.3571428571428572">
+               <stops>
+                  <Stop color="#396290" />
+                  <Stop color="#396290" offset="0.00749063670411985" />
+                  <Stop color="#3b8f8bbf" offset="0.5975106873983279" />
+                  <Stop color="#38cfabb5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow color="#2625258b" height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </Label>
+      <Pane layoutX="147.0" layoutY="72.0" prefHeight="155.0" prefWidth="270.0">
+         <children>
+            <ImageView fx:id="passwordIcon" fitHeight="27.0" fitWidth="35.0" layoutX="226.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/key.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="accountIcon" fitHeight="23.0" fitWidth="20.0" layoutX="231.0" layoutY="17.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Icon/account.png" />
+               </image>
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+            </ImageView>
+            <TextField fx:id="account" layoutX="18.0" layoutY="8.0" opacity="0.67" prefColumnCount="11" prefHeight="40.0" prefWidth="237.0" promptText="请输入账户">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Glow />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="18.0" layoutY="55.0" opacity="0.7" prefColumnCount="30" prefHeight="40.0" prefWidth="237.0" promptText="请输入密码">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+            </PasswordField>
+            <HBox layoutX="18.0" layoutY="113.0" prefHeight="28.0" prefWidth="249.0" spacing="14.0">
+               <children>
+                  <CheckBox fx:id="loginAuto" mnemonicParsing="false" prefHeight="24.0" prefWidth="127.0" text="自动登陆" />
+                  <CheckBox fx:id="rememberPassword" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="119.0" text="记住密码" />
+                  <Hyperlink onAction="#findPassword" prefHeight="0.0" prefWidth="110.0" text="找回密码" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Button defaultButton="true" layoutX="163.0" layoutY="218.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="237.0" text="登陆" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Hyperlink layoutX="35.0" layoutY="248.0" onAction="#register" prefHeight="12.0" prefWidth="58.0" text="注册账号" />
+      <Line endX="8.0" layoutX="411.0" layoutY="15.0" />
+      <Line endX="8.0" layoutX="434.0" layoutY="15.0" onMouseClicked="#close" rotate="-45.0" />
+      <Line endX="8.0" layoutX="434.0" layoutY="15.0" onMouseClicked="#close" rotate="45.0" />
+      <Circle fill="#85858599" layoutX="415.0" layoutY="15.0" onMouseClicked="#minimize" radius="9.0" stroke="#e31b1b00" strokeType="INSIDE" />
+      <Circle fill="#ff000099" layoutX="438.0" layoutY="15.0" onMouseClicked="#close" radius="9.0" stroke="#c2292900" strokeType="INSIDE" />
+      <Label layoutX="433.0" layoutY="277.0" onMouseClicked="#setting" prefHeight="21.0" prefWidth="28.0" text="设置">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#3761ab70" />
+                  <Stop color="#3e51b598" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+   </children>
+   <effect>
+      <DropShadow color="#b8b8b8d4" height="0.0" radius="0.0" spread="0.13" width="0.0" />
+   </effect>
+</Pane>

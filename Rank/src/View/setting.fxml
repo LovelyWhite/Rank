@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="304.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SettingController">
+   <children>
+      <Rectangle arcHeight="5.0" height="304.0" layoutY="3.0" nodeOrientation="LEFT_TO_RIGHT" strokeDashOffset="1.0" strokeLineCap="ROUND" strokeMiterLimit="1.0" strokeType="INSIDE" strokeWidth="3.0" width="463.0">
+         <effect>
+            <Glow level="0.17" />
+         </effect>
+         <fill>
+            <LinearGradient endX="0.32857142857142857" endY="0.11428571428571438" startX="0.3285714285714285" startY="0.9761904761904762">
+               <stops>
+                  <Stop color="#3593e5b6" />
+                  <Stop color="#ebf3fa00" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="0.3476190476190476" endY="0.4809523809523809" startX="0.7285714285714285" startY="0.7428571428571428">
+               <stops>
+                  <Stop color="#15195900" />
+                  <Stop color="#136e3400" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Rectangle>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="294.0" prefWidth="463.0" spacing="20.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ToolBar prefHeight="45.0" prefWidth="463.0">
+              <items>
+                <Button minHeight="30.0" mnemonicParsing="false" onMouseClicked="#post" text="提交数据" />
+                  <Button minHeight="30.0" mnemonicParsing="false" onMouseClicked="#clear" text="清空" />
+                  <Pane fx:id="dragPane" prefHeight="52.0" prefWidth="330.0">
+                     <children>
+                        <Line endX="8.0" layoutX="316.0" layoutY="10.0" onMouseClicked="#close" rotate="45.0" />
+                        <Line endX="8.0" layoutX="293.0" layoutY="10.0" onMouseClicked="#minimize" />
+                        <Line endX="8.0" layoutX="316.0" layoutY="10.0" onMouseClicked="#close" rotate="-45.0" />
+                        <Circle fill="#85858599" layoutX="297.0" layoutY="10.0" onMouseClicked="#minimize" radius="9.0" stroke="#c2292900" strokeType="INSIDE" />
+                        <Circle fill="#ff000099" layoutX="320.0" layoutY="10.0" onMouseClicked="#close" radius="9.0" stroke="#c2292900" strokeType="INSIDE" />
+                     </children>
+                     <padding>
+                        <Insets left="140.0" />
+                     </padding>
+                  </Pane>
+              </items>
+            </ToolBar>
+            <GridPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="304.0" prefWidth="463.0">
+              <columnConstraints>
+                <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="225.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="97.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="IP">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <Label text="DataBaseName" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <Label text="Port" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <Label text="Account" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <Label text="Password" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <TextField fx:id="ip" maxWidth="240.0" prefWidth="240.0" promptText="在这里填写数据库IP地址" GridPane.columnIndex="1">
+                     <tooltip>
+                        <Tooltip text="请输入数据库IP" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="databaseName" maxWidth="240.0" prefWidth="240.0" promptText="在这里填写数据库名称" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <tooltip>
+                        <Tooltip text="请输入数据库名称" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="databasePort" maxWidth="240.0" prefWidth="240.0" promptText="在这里填写数据库端口" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <tooltip>
+                        <Tooltip text="请输入数据库端口" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="databaseAccount" maxWidth="240.0" prefWidth="240.0" promptText="在这里填写数据库账户" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <tooltip>
+                        <Tooltip text="请输入数据库账号" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="Encoding" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font></Label>
+                  <CheckBox fx:id="useSSL" mnemonicParsing="false" text="UseSSL" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Monaco" size="12.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="是否加密传输" />
+                     </tooltip></CheckBox>
+                  <TextField fx:id="encoding" maxWidth="240.0" prefWidth="240.0" promptText="在这里填写数据库编码方式" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin></TextField>
+                  <Label fx:id="messageIP" textFill="#ff0202" GridPane.columnIndex="2" />
+                  <Label fx:id="messageName" textFill="#ff0202" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label fx:id="messagePort" textFill="#ff0202" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label fx:id="messageAccount" textFill="#ff0202" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label fx:id="messagePassword" textFill="#ff0202" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Label fx:id="messageEncoding" textFill="#ff0202" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <PasswordField fx:id="databasePassword" promptText="在这里填写数据库密码" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="3.0" left="30.0" right="3.0" top="3.0" />
+               </VBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="4.0" right="4.0" top="3.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

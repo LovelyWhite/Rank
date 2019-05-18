@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="movePane" prefHeight="685.0" prefWidth="998.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SystemController">
+   <children>
+      <FlowPane layoutY="40.0" prefHeight="641.0" prefWidth="967.0">
+         <children>
+            <TabPane fx:id="table" prefHeight="595.0" prefWidth="998.0" rotateGraphic="true" side="BOTTOM" tabClosingPolicy="UNAVAILABLE" tabMinHeight="40.0" tabMinWidth="110.0">
+              <tabs>
+                <Tab fx:id="tab1" text="报名须知">
+                     <content>
+                        <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="541.0" prefWidth="1006.0">
+                           <top>
+                              <Label prefHeight="59.0" prefWidth="697.0" text="全国计算机等级考试（NCRE）报名须知" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="36.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </Label>
+                           </top>
+                           <center>
+                              <TextArea maxWidth="-Infinity" opacity="0.87" prefHeight="401.0" prefWidth="810.0" text="教育部考试中心规定，自?年?月第?次全国计算机等级考试（以下简称NCRE）开始，在全国范围内实施NCRE?版考试大纲、调整考试体系(二级Visual FoxPro科目于2018年停考，三级软件测试技术、四级软件测试工程师两个科目从2018年3月起暂停开考，二级C、C++两个科目应用软件由Visual C++6.0改为Visual C++2010学习版，2018年9月第52次NCRE开始新增二级科目：Python语言程序设计，科目代码：66,该科目软件为Python3.5.2版本及以上IDLE)，NCRE全部科目均采用无纸化考试形式（新版大纲具体内容参见《关于全国计算机等级考试（NCRE）体系调整的通知》（教试中心函[2017] 205号）。&#10;&#10;     一、报名条件&#10;&#10;    报考人员不论职业、年龄、学历、在职与否，均可根据自身学习和使用计算机的实际情况报考。考生报名时，应提供有效身份证件，并履行相关手续。有效身份证件指居民身份证、台湾居民往来大陆通行证、港澳居民身份证和护照。&#10;&#10;    二、考试科目及考试时长(2018版考试大纲）&#10;&#10;&#10;&#10;    三、报考时间及考试环境&#10;&#10;1．第xx次NCRE湖南省网报时间段为x年6月9日-15日，逾期不予补报。考点具体报名时间可在此时间段内根据工作安排进行调整，请报考考生留意所报考考点公布的具体报名时间。&#10;&#10;2．第xx次NCRE考试时间为xxxx年x月x日-x日。&#10;&#10;3．考试环境：所有科目考试均为WIN 7环境下的无纸化机试。&#10;&#10;4. 第52次开考级别及科目：开考1-4级所有科目（考生一次考试最多可报考3门不同科目，禁止异地重复报考、禁止一次考试重复报考同一科目，否则湖南省教育考试院将通知考生所在学校或单位，依据教育部考试中心的规定按违规处理）。考点可在湖南省教育考试院公布开考科目中根据自身的教学要求或机房条件选择开考科目。&#10;&#10; &#10;&#10;    四、报名办法&#10;&#10;1．考生可在本网站或直接到考点报名；考点的教职工不得在本考点报名，长沙市社会考生在长沙市教育考试服务中心考点报名参考。长沙没开考考点院校的学生按社会考生报名。&#10;&#10;2．考生报名时，须提供本人的有效身份证件（身份证、台湾居民往来大陆通行证、港澳居民身份证和护照）。&#10;&#10;3．考生报名时，必须保证其所提交的数据信息内容真实、准确；进行现场图像信息采集的考生，其图像信息的采集标准按NCRE信息采集标准规定执行，没提供照片信息的考生不得参加考试。注：图像信息适用于准考证、合格证书，如考生不按要求提供，所造成后果由考生自己负责；根据《 湖南省财政厅关于调整全国英语等级考试和计算机等级考试收费分成比例的通知》（湘财综〔2007〕40号）缴纳报名考试费。（一级、二级、三级95元／科次，四级145元/科次）。&#10;&#10;4．考生（或委托人）通过湖南省教育考试院公布网址完成网上报名信息填报确认后，视同其报名信息经过本人核准认同，不得修改。如所报考点另有要求考生以纸质形式确认时，考生须按要求签字确认。所有考生签字确认材料，考点须妥善保管半年，不得损毁。&#10;&#10;5．如果在校生报名时发现因所属学校原因或其他信息有误导致无法按本人意愿报考时，请在湖南省教育考试院规定的报名时间段内及时与现学籍所在学校的NCRE管理部门联系，非NCRE考点的学生，与所报考考点的NCRE管理部门联系，并告知具体情况。&#10;&#10; &#10;&#10;    五、其他注意事项&#10;&#10;1.自2018年3月考试起，考生只需通过三级考试即可获得该三级科目合格证书，不再要求二级证书。&#10;&#10;2.考试开始15分钟后考生才能离开考场。&#10;&#10;3.考试结果不再公布具体分数，以等第形式公布；90－100分为优秀、80－89分为良好、60－79分为及格、0－59分为不及格。&#10;&#10;&#10;4.四级获证条件：通过四级科目的考试，并已经（或同时）获得三级相关证书。&#10;&#10;5.考试结束后50天左右，教育部考试中心网站（http://chaxun.neea.edu.cn/）提供结果查询。&#10;&#10;6.本系统暂不支持微信、支付宝缴费，只支持银联收费。" wrapText="true" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets bottom="20.0" left="10.0" right="10.0" top="17.0" />
+                                 </BorderPane.margin>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </TextArea>
+                           </center>
+                           <bottom>
+                              <Button mnemonicParsing="false" onMouseClicked="#button1" opacity="0.69" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: blue;" text="我已了解" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="22.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets bottom="17.0" />
+                                 </BorderPane.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </bottom>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </BorderPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab2" disable="true" text="个人信息">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <top>
+                              <Label contentDisplay="CENTER" prefHeight="57.0" prefWidth="225.0" text="填报个人信息" textAlignment="CENTER" textFill="#000000de" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="36.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets right="100.0" />
+                                 </BorderPane.margin>
+                              </Label>
+                           </top>
+                           <center>
+                              <GridPane maxWidth="800.0" onMouseClicked="#button1" opacity="0.81" prefHeight="397.0" prefWidth="769.0" vgap="3.0" BorderPane.alignment="CENTER">
+                                <columnConstraints>
+                                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="158.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="90.0" percentWidth="0.0" prefWidth="395.0" />
+                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="762.0" minWidth="10.0" prefWidth="216.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="姓名：" textFill="#000000d9">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="证件类型：" textFill="#000000d9" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="证件号码：" textFill="#000000d9" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="性别：" textFill="#000000d9" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="民族：" textFill="#000000d9" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="文化程度：" textFill="#000000d9" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="职业：" textFill="#000000d9" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="通讯地址：" textFill="#000000d9" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="邮政编码：" textFill="#000000d9" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="联系电话1：" textFill="#000000d9" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="联系电话2：" textFill="#000000d9" GridPane.rowIndex="10">
+                                       <font>
+                                          <Font name="MFLiHei_Noncommercial-Regular" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Emali：" textFill="#000000d9" GridPane.rowIndex="11">
+                                       <font>
+                                          <Font name="Marlett" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2">
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="23.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="grid3" minHeight="24.0" prefHeight="26.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid8" minHeight="24.0" prefHeight="24.0" prefWidth="340.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid9" minHeight="24.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid10" minHeight="24.0" prefHeight="30.0" prefWidth="317.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid11" minHeight="24.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid12" minHeight="24.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid1" minHeight="24.0" prefHeight="26.0" prefWidth="514.0" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="*" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" prefHeight="33.0" prefWidth="8.0" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label opacity="0.84" text="*" textFill="#ff0000c5" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="200.0" />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets right="150.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="grid2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid5" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid6" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <TextField fx:id="grid7" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <GridPane.margin>
+                                          <Insets right="140.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets top="30.0" />
+                                 </BorderPane.margin>
+                                 <padding>
+                                    <Insets bottom="40.0" left="40.0" right="40.0" />
+                                 </padding>
+                              </GridPane>
+                           </center>
+                           <bottom>
+                              <Button mnemonicParsing="false" onAction="#button2" onMouseClicked="#button2" opacity="0.69" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: blue;" text="确定" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="22.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets bottom="17.0" right="120.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="80.0" />
+                           </padding>
+                        </BorderPane>
+                     </content>
+                  </Tab>
+                <Tab fx:id="tab3" disable="true" text="上传照片">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <bottom>
+                              <Button mnemonicParsing="false" onAction="#button2" onMouseClicked="#button3" opacity="0.69" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: blue;" text="确定" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="22.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets bottom="17.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                        </BorderPane>
+                     </content></Tab>
+                  <Tab fx:id="tab4" disable="true" text="报考科目">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <bottom>
+                              <Button mnemonicParsing="false" onAction="#button2" onMouseClicked="#button4" opacity="0.69" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: blue;" text="确定" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="22.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets bottom="17.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                        </BorderPane>
+                     </content></Tab>
+                  <Tab fx:id="tab5" disable="true" text="打印复核单">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <bottom>
+                              <Button mnemonicParsing="false" onAction="#button2" onMouseClicked="#button5" opacity="0.69" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: blue;" text="确定" textFill="#f8f8f8" BorderPane.alignment="CENTER">
+                                 <font>
+                                    <Font name="MFLiHei_Noncommercial-Regular" size="22.0" />
+                                 </font>
+                                 <BorderPane.margin>
+                                    <Insets bottom="17.0" />
+                                 </BorderPane.margin>
+                              </Button>
+                           </bottom>
+                        </BorderPane>
+                     </content></Tab>
+                  <Tab fx:id="tab6" disable="true" text="网上缴费">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" />
+                     </content></Tab>
+                  <Tab text="考生退费" />
+                  <Tab text="查看考生报名状态" />
+              </tabs>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TabPane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </FlowPane>
+      <Line endX="8.0" layoutX="955.0" layoutY="20.0" onMouseClicked="#close" rotate="45.0" />
+      <Line endX="8.0" layoutX="955.0" layoutY="20.0" onMouseClicked="#close" rotate="-45.0" />
+      <Line endX="8.0" layoutX="930.0" layoutY="20.0" />
+      <Circle fx:id="minimizeButton" fill="#85858599" layoutX="934.0" layoutY="20.0" onMouseClicked="#minimize" radius="9.0" stroke="#e31b1b00" strokeType="INSIDE" />
+      <Circle fx:id="closeButton" fill="#ff000099" layoutX="959.0" layoutY="20.0" onMouseClicked="#close" radius="9.0" stroke="#c2292900" strokeType="INSIDE" />
+   </children>
+   <effect>
+      <InnerShadow blurType="ONE_PASS_BOX" choke="1.0" color="TRANSPARENT" height="255.0" offsetX="1.0" radius="127.0" width="255.0" />
+   </effect>
+</Pane>

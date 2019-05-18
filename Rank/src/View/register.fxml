@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#compare" prefHeight="304.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+   <children>
+      <Label layoutX="14.0" layoutY="2.0" prefHeight="40.0" prefWidth="188.0" text="全国计算机考试报名系统">
+         <effect>
+            <DropShadow color="#2625258b" height="0.0" radius="0.0" width="0.0" />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7095238095238096" endY="0.12380952380952386" startX="0.8809523809523808" startY="0.3571428571428572">
+               <stops>
+                  <Stop color="#396290" />
+                  <Stop color="#396290" offset="0.00749063670411985" />
+                  <Stop color="#3b8f8bbf" offset="0.5975106873983279" />
+                  <Stop color="#38cfabb5" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Pane layoutX="28.0" layoutY="63.0" prefHeight="155.0" prefWidth="270.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="226.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+               <image>
+                  <Image url="@../Icon/key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="20.0" layoutX="231.0" layoutY="17.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+               <image>
+                  <Image url="@../Icon/account.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="account" layoutX="18.0" layoutY="9.0" opacity="0.67" prefColumnCount="11" prefHeight="40.0" prefWidth="237.0" promptText="请输入账户">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Blend>
+                     <topInput>
+                        <Glow />
+                     </topInput>
+                  </Blend>
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="18.0" layoutY="55.0" onKeyTyped="#compare" opacity="0.7" prefColumnCount="30" prefHeight="40.0" prefWidth="237.0" promptText="请输入密码">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <ImageView fitHeight="27.0" fitWidth="35.0" layoutX="226.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend mode="ADD" />
+               </effect>
+               <image>
+                  <Image url="@../Icon/key.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passwordRepeat" layoutX="18.0" layoutY="100.0" onKeyReleased="#compare" opacity="0.7" prefColumnCount="30" prefHeight="40.0" prefWidth="237.0" promptText="请再次输入密码">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </Pane>
+      <Button defaultButton="true" layoutX="45.0" layoutY="228.0" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="237.0" text="注册" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Line endX="8.0" layoutX="411.0" layoutY="15.0" />
+      <Line endX="8.0" layoutX="434.0" layoutY="15.0" onMouseClicked="#close" rotate="-45.0" />
+      <Line endX="8.0" layoutX="434.0" layoutY="15.0" onMouseClicked="#close" rotate="45.0" />
+      <Circle fill="#85858599" layoutX="415.0" layoutY="15.0" onMouseClicked="#minimize" radius="9.0" stroke="#e31b1b00" strokeType="INSIDE" />
+      <Circle fill="#ff000099" layoutX="438.0" layoutY="15.0" onMouseClicked="#close" radius="9.0" stroke="#c2292900" strokeType="INSIDE" />
+      <Label fx:id="labelPasswordR" layoutX="294.0" layoutY="174.0" prefHeight="15.0" prefWidth="111.0" textFill="RED" />
+   </children>
+   <effect>
+      <DropShadow color="#b8b8b8d4" height="0.0" radius="0.0" spread="0.13" width="0.0" />
+   </effect>
+</Pane>
